@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- SLICK MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SLICK THEME MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- root -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/img/png/heart.png" type="image/x-icon">
+    <title>Medical Active</title>
+</head>
+
+<body>
+    <div class="bg_img">
+        <nav class="container pt-3">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <p class="clr_white f_Montserrat fw_700 fs_xl">Medical Active</p>
+                <div class="d-flex flex-column " onclick="navshow ()">
+                    <span class="menuicon"></span>
+                    <span class="menuicon"></span>
+                    <span class="menuicon"></span>
+                </div>
+                <ul class="d-flex " id="show">
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3" href="#">Home</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3" href="#">Product</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3" href="#">Pricing</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3" href="#">Contact</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3 d-lg-none" href="#">Login</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ms-3 d-lg-none" href="#">JOIN US</a></li>
+                </ul>
+
+                <ul class="d-flex align-items-center">
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 ps-3" href="#">Login</a></li>
+                    <li><a class="clr_white f_Montserrat fs_sm fw_700 bg_orange style_jion ms-3 align-items-center "
+                            href="#">JOIN US <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 5C0 4.81059 0.079009 4.62895 0.219646 4.49502C0.360282 4.36109 0.551026 4.28584 0.749916 4.28584H9.43845L6.21831 1.22068C6.07749 1.08658 5.99838 0.904705 5.99838 0.715059C5.99838 0.525414 6.07749 0.343536 6.21831 0.209436C6.35912 0.0753365 6.5501 0 6.74925 0C6.94839 0 7.13937 0.0753365 7.28019 0.209436L11.7797 4.49438C11.8495 4.56072 11.9049 4.63952 11.9427 4.72629C11.9805 4.81305 12 4.90606 12 5C12 5.09394 11.9805 5.18695 11.9427 5.27371C11.9049 5.36048 11.8495 5.43928 11.7797 5.50562L7.28019 9.79056C7.13937 9.92466 6.94839 10 6.74925 10C6.5501 10 6.35912 9.92466 6.21831 9.79056C6.07749 9.65646 5.99838 9.47459 5.99838 9.28494C5.99838 9.0953 6.07749 8.91342 6.21831 8.77932L9.43845 5.71416H0.749916C0.551026 5.71416 0.360282 5.63892 0.219646 5.50499C0.079009 5.37106 0 5.18941 0 5Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container pb-5">
+            <div class="row align-items-center ">
+                <div class="col-12 col-lg-6 text-center text-lg-start pt-5 pt-lg-0  ">
+                    <p class="f_Montserrat fw_700 fs_md fs_sm_xsm clr_white">Join Us</p>
+                    <p class="f_Montserrat fw_700 fs_3xl fs_2xl_xsm clr_white pt-2">Meet the Best Doctors</p>
+                    <p class="f_Montserrat fs_lg fw_400 fs_lg fs_md_xsm clr_white pt-2 min_w_513">We are always fully
+                        focused on helping your child
+                        and you</p>
+                    <div class="d-flex pt-2 justify-content-center justify-content-lg-start flex-column flex-sm-row">
+                        <a class="fw_700 fs_sm clr_white f_Montserrat style_get d-inline-block" href="#">Get Quote
+                            Now</a>
+                        <a class="fw_700 fs_sm clr_white f_Montserrat style_learn ms-3 d-inline-block mt-3 mt-sm-0"
+                            href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img class="w-100" src="./assets/img/png/doctorni.png" alt="doctor">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div-2 -->
+    <div class="container pt-5 pb-5">
+        <div class="row align-items-center text-center text-xl-start">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/hooli.png" alt="hooli">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/lyft.png" alt="lyft">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/cap_logo.png" alt="cap">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/stripe.png" alt="stripe">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/aws.png" alt="aws">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 pt-3">
+                <img src="./assets/img/png/discord.png" alt="discord">
+            </div>
+        </div>
+    </div>
+    <!-- div-3 -->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+                <div class="hr_1"></div>
+                <div>
+                    <p class="fw_700 fs_2xl f_Montserrat ">Our Department</p>
+                    <p class="f_Montserrat fs_sm fw_400 min_w_351">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics</p>
+                    <div class="d-flex ">
+                        <p class="fw_700 fs_sm clr_orange f_Montserrat pt-1">Learn More</p>
+                        <div class="ps-3">
+                            <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.180771 0.533799C0.237928 0.476497 0.305828 0.431034 0.380583 0.400014C0.455337 0.368995 0.535477 0.353027 0.616412 0.353027C0.697347 0.353027 0.777487 0.368995 0.852241 0.400014C0.926996 0.431034 0.994896 0.476497 1.05205 0.533799L8.4358 7.91755C8.4931 7.9747 8.53857 8.04261 8.56959 8.11736C8.60061 8.19211 8.61657 8.27225 8.61657 8.35319C8.61657 8.43412 8.60061 8.51426 8.56959 8.58902C8.53857 8.66377 8.4931 8.73167 8.4358 8.78883L1.05205 16.1726C0.936514 16.2881 0.779809 16.353 0.616412 16.353C0.453015 16.353 0.29631 16.2881 0.180771 16.1726C0.0652316 16.057 0.000322157 15.9003 0.000322157 15.7369C0.000322157 15.5735 0.0652316 15.4168 0.180771 15.3013L7.13011 8.35319L0.180771 1.40508C0.123469 1.34792 0.078006 1.28002 0.0469863 1.20527C0.0159666 1.13051 0 1.05037 0 0.96944C0 0.888505 0.0159666 0.808365 0.0469863 0.733611C0.078006 0.658856 0.123469 0.590956 0.180771 0.533799V0.533799Z"
+                                    fill="#FC724D" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="d_grid">
+                    <div class="box_1">
+                        <div class="box_shdo p-5">
+                            <img src="./assets/img/png/heart.png" alt="heart">
+                            <p class="f_Montserrat fw_700 fs_md pt-3">Cancer Care</p>
+                            <div class="hr_2 mt-3"></div>
+                            <p class="f_Montserrat fw_400 fs_sm min_w_132 pt-3">The gradual
+                                accumulation of
+                                information about</p>
+                        </div>
+                    </div>
+                    <div class="box_2">
+                        <div class="box_shdo p-5">
+                            <img src="./assets/img/png/heart.png" alt="heart">
+                            <p class="f_Montserrat fw_700 fs_md pt-3">Cancer Care</p>
+                            <div class="hr_2 mt-3"></div>
+                            <p class="f_Montserrat fw_400 fs_sm min_w_132 pt-3">The gradual
+                                accumulation of
+                                information about</p>
+                        </div>
+                    </div>
+                    <div class="box_3">
+                        <div class="box_shdo p-5">
+                            <img src="./assets/img/png/heart.png" alt="heart">
+                            <p class="f_Montserrat fw_700 fs_md pt-3">Cancer Care</p>
+                            <div class="hr_2 mt-3"></div>
+                            <p class="f_Montserrat fw_400 fs_sm min_w_132 pt-3">The gradual
+                                accumulation of
+                                information about</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div-4 -->
+    <div class="container pt-5">
+        <div class="row align-items-center  pt-5">
+            <div class="col-12 col-md-6">
+                <img class=" img-fluid" src="./assets/img/png/2nd_doctorni.png" alt="doctor">
+            </div>
+            <div class="col-md-6 col-12 pt-5 pt-md-0">
+                <div class="hr_1"></div>
+                <div>
+                    <p class="fw_700 fs_2xl f_Montserrat ">Leading Medicine</p>
+                    <p class="f_Montserrat fs_sm fw_400 min_w_351">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics</p>
+                    <div class="d-flex ">
+                        <p class="fw_700 fs_sm clr_orange f_Montserrat pt-1">Learn More</p>
+                        <div class="ps-3">
+                            <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.180771 0.533799C0.237928 0.476497 0.305828 0.431034 0.380583 0.400014C0.455337 0.368995 0.535477 0.353027 0.616412 0.353027C0.697347 0.353027 0.777487 0.368995 0.852241 0.400014C0.926996 0.431034 0.994896 0.476497 1.05205 0.533799L8.4358 7.91755C8.4931 7.9747 8.53857 8.04261 8.56959 8.11736C8.60061 8.19211 8.61657 8.27225 8.61657 8.35319C8.61657 8.43412 8.60061 8.51426 8.56959 8.58902C8.53857 8.66377 8.4931 8.73167 8.4358 8.78883L1.05205 16.1726C0.936514 16.2881 0.779809 16.353 0.616412 16.353C0.453015 16.353 0.29631 16.2881 0.180771 16.1726C0.0652316 16.057 0.000322157 15.9003 0.000322157 15.7369C0.000322157 15.5735 0.0652316 15.4168 0.180771 15.3013L7.13011 8.35319L0.180771 1.40508C0.123469 1.34792 0.078006 1.28002 0.0469863 1.20527C0.0159666 1.13051 0 1.05037 0 0.96944C0 0.888505 0.0159666 0.808365 0.0469863 0.733611C0.078006 0.658856 0.123469 0.590956 0.180771 0.533799V0.533799Z"
+                                    fill="#FC724D" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- div-5 -->
+    <div class="container pt-5">
+        <div class="row align-items-center flex-column-reverse flex-md-row pt-5">
+
+            <div class="col-md-6 col-12 pt-5 pt-md-0">
+                <div class="hr_1"></div>
+                <div>
+                    <p class="fw_700 fs_2xl f_Montserrat ">Our Activity</p>
+                    <p class="f_Montserrat fs_sm fw_400 min_w_351">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics:
+                        Newtonian mechanics</p>
+                    <div class="d-flex ">
+                        <p class="fw_700 fs_sm clr_orange f_Montserrat pt-1">Learn More</p>
+                        <div class="ps-3">
+                            <svg width="9" height="17" viewBox="0 0 9 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.180771 0.533799C0.237928 0.476497 0.305828 0.431034 0.380583 0.400014C0.455337 0.368995 0.535477 0.353027 0.616412 0.353027C0.697347 0.353027 0.777487 0.368995 0.852241 0.400014C0.926996 0.431034 0.994896 0.476497 1.05205 0.533799L8.4358 7.91755C8.4931 7.9747 8.53857 8.04261 8.56959 8.11736C8.60061 8.19211 8.61657 8.27225 8.61657 8.35319C8.61657 8.43412 8.60061 8.51426 8.56959 8.58902C8.53857 8.66377 8.4931 8.73167 8.4358 8.78883L1.05205 16.1726C0.936514 16.2881 0.779809 16.353 0.616412 16.353C0.453015 16.353 0.29631 16.2881 0.180771 16.1726C0.0652316 16.057 0.000322157 15.9003 0.000322157 15.7369C0.000322157 15.5735 0.0652316 15.4168 0.180771 15.3013L7.13011 8.35319L0.180771 1.40508C0.123469 1.34792 0.078006 1.28002 0.0469863 1.20527C0.0159666 1.13051 0 1.05037 0 0.96944C0 0.888505 0.0159666 0.808365 0.0469863 0.733611C0.078006 0.658856 0.123469 0.590956 0.180771 0.533799V0.533799Z"
+                                    fill="#FC724D" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class=" img-fluid" src="./assets/img/png/nurse.png" alt="nurse">
+            </div>
+        </div>
+    </div>
+    <!-- div-6 -->
+    <div class="bg_voilet pt-5 pb-3 mb-5">
+        <div class="container pt-5 pb-5">
+            <div class="pt-5">
+                <p class="f_Montserrat fw_700 fs_sm clr_orange">Practice Advice</p>
+                <p class="f_Montserrat fw_700 fs_xl clr_white">Our Doctors Specialize in you</p>
+                <p class="f_Montserrat fw_400 fs_sm clr_white min_w_469">Problems trying to resolve the conflict between
+                    the two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 col-md-6 col-xl-4 pt-4 pb-4 position-relative bg_white">
+                    <a class="bg_orange clr_white style_sale position-absolute" href="#">Sale</a>
+                    <div class="bg_img_1 d-flex align-items-end justify-content-center">
+                        <a href="#"><img class=" pb-3" src="./assets/img/png/Group_3img.png" alt="group"></a>
+                    </div>
+                    <div class="bg-white ps-3 p-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="fw_700 fs_sm clr_blue f_Montserrat">Best dental surgeons</p>
+                            <div class=" button_box d-flex align-items-center me-3 ">
+                                <span class="d-inline-block pb-1"><img class="" src="./assets/img/png/star.png"
+                                        alt="star"></span>
+                                <p class="clr_white ps-1 mb-0 f_Montserrat fw_400 fs_ss">4.9</p>
+                            </div>
+                        </div>
+                        <p class="fw_700 fs_md f_Montserrat">Cancer Care</p>
+                        <p class="f_Montserrat fs_sm min_w_280">We focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class="d-flex align-items-center">
+                            <span class="pb-1"><img src="./assets/img/png/dow.png" alt="download"></span>
+                            <p class="fw_700 fs_sm clr_grey f_Montserrat mb-0 ps-2">15 Sales</p>
+                        </div>
+                        <div class="d-flex pt-3">
+                            <p class="fw_700 fs_md clr_grey">$16.48</p>
+                            <p class="fw_700 fs_md clr_blue ps-2 f_Montserrat">$6.48</p>
+                        </div>
+                        <div class="d-flex justify-content-between pt-4">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/alram.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">22hr 30min</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/lesson.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">64 Lessons</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/progrees.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="style_mor d-inline-block mt-3 mb-2" href="#">Learn More <svg width="10" height="16"
+                                viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 13.7143L6.21428 8L0.5 2.28571L1.64286 0L9.64286 8L1.64286 16L0.5 13.7143Z"
+                                    fill="#0061FF" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 pt-4 pb-4 position-relative bg_white">
+                    <a class="bg_orange clr_white style_sale position-absolute" href="#">Sale</a>
+                    <div class="bg_img_2 d-flex align-items-end justify-content-center">
+                        <a href="#"><img class=" pb-3" src="./assets/img/png/Group_3img.png" alt="group"></a>
+                    </div>
+                    <div class="bg-white ps-3 p-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="fw_700 fs_sm clr_blue f_Montserrat">Painless procedures</p>
+                            <div class=" button_box d-flex align-items-center me-3 ">
+                                <span class="d-inline-block pb-1"><img class="" src="./assets/img/png/star.png"
+                                        alt="star"></span>
+                                <p class="clr_white ps-1 mb-0 f_Montserrat fw_400 fs_ss">4.9</p>
+                            </div>
+                        </div>
+                        <p class="fw_700 fs_md f_Montserrat">Health Queries</p>
+                        <p class="f_Montserrat fs_sm min_w_280">We focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class="d-flex align-items-center">
+                            <span class="pb-1"><img src="./assets/img/png/dow.png" alt="download"></span>
+                            <p class="fw_700 fs_sm clr_grey f_Montserrat mb-0 ps-2">15 Sales</p>
+                        </div>
+                        <div class="d-flex pt-3">
+                            <p class="fw_700 fs_md clr_grey">$16.48</p>
+                            <p class="fw_700 fs_md clr_blue ps-2 f_Montserrat">$6.48</p>
+                        </div>
+                        <div class="d-flex justify-content-between pt-4">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/alram.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">22hr 30min</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/lesson.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">64 Lessons</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/progrees.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="style_mor d-inline-block mt-3 mb-2" href="#">Learn More <svg width="10" height="16"
+                                viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 13.7143L6.21428 8L0.5 2.28571L1.64286 0L9.64286 8L1.64286 16L0.5 13.7143Z"
+                                    fill="#0061FF" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 pt-4 pb-4 position-relative bg_white">
+                    <a class="bg_orange clr_white style_sale position-absolute" href="#">Sale</a>
+                    <div class="bg_img_3 d-flex align-items-end justify-content-center">
+                        <a href="#"><img class=" pb-3" src="./assets/img/png/Group_3img.png" alt="group"></a>
+                    </div>
+                    <div class="bg-white ps-3 p-4">
+                        <div class="d-flex justify-content-between">
+                            <p class="fw_700 fs_sm clr_blue f_Montserrat">Book now</p>
+                            <div class=" button_box d-flex align-items-center me-3 ">
+                                <span class="d-inline-block pb-1"><img class="" src="./assets/img/png/star.png"
+                                        alt="star"></span>
+                                <p class="clr_white ps-1 mb-0 f_Montserrat fw_400 fs_ss">4.9</p>
+                            </div>
+                        </div>
+                        <p class="fw_700 fs_md f_Montserrat">Quick examination</p>
+                        <p class="f_Montserrat fs_sm min_w_280">We focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class="d-flex align-items-center">
+                            <span class="pb-1"><img src="./assets/img/png/dow.png" alt="download"></span>
+                            <p class="fw_700 fs_sm clr_grey f_Montserrat mb-0 ps-2">15 Sales</p>
+                        </div>
+                        <div class="d-flex pt-3">
+                            <p class="fw_700 fs_md clr_grey">$16.48</p>
+                            <p class="fw_700 fs_md clr_blue ps-2 f_Montserrat">$6.48</p>
+                        </div>
+                        <div class="d-flex justify-content-between pt-4">
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/alram.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">22hr 30min</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/lesson.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">64 Lessons</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span><img src="./assets/img/png/progrees.png" alt="alarm"></span>
+                                    <p class="fw_400 fs_ss f_Montserrat mb-0 ps-2">Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="style_mor d-inline-block mt-3 mb-2" href="#">Learn More <svg width="10" height="16"
+                                viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 13.7143L6.21428 8L0.5 2.28571L1.64286 0L9.64286 8L1.64286 16L0.5 13.7143Z"
+                                    fill="#0061FF" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div-7 -->
+    <div class="container pt-5 pb-5">
+        <p class="f_Montserrat clr_orange fw_700 fs_ss">Practice Advice</p>
+        <p class="f_Montserrat fw_700 fs_xl">See Our Impressions</p>
+        <p class="f_Montserrat fw_400 fs_ss min_w_469">Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics</p>
+        <div class="row pt-5 slick_slider pb-5">
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles_2.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles_3.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles_2.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-center">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/img/png/star_all.png" alt="star">
+                </div>
+                <p class="f_Montserrat fw_400 fs_ss min_w_159 pt-3 ms-auto me-auto">Slate helps you see
+                    how many more days
+                    you need to work to
+                    reach your financial
+                    goal for the month
+                    and year.</p>
+                <div class="d-flex pt-3 justify-content-center">
+                    <span><img src="./assets/img/png/regina_miles_3.png" alt=""></span>
+                    <div class="ps-3">
+                        <p class="f_Montserrat fw_700 fs_sm mb-0 clr_orange">Regina Miles</p>
+                        <p class="f_Montserrat fw_400 fs_ss text-start">Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div-8 -->
+    <div class="container pt-5 pb-5">
+        <div class="d-flex flex-column align-items-center">
+            <p class="f_Montserrat fw_700 fs_sm clr_orange">Newsletter</p>
+            <p class="f_Montserrat fw_700 fs_xl">JOIN US</p>
+            <p class="f_Montserrat fw_400 fs_sm min_w_469">Problems trying to resolve the conflict between
+                the two major realms of Classical physics: Newtonian mechanics</p>
+            <div class="style_email d-flex">
+                <input class=" border-0 fw_400 fs_sm bg_sliver p-3 h-100 w-100" type="text" placeholder="Your Email">
+                <a class="f400 fs_sm clr_white f_Montserrat bg_orange style_sub" href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="bg_voilet">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-xl-8 col-12">
+                    <div class="row">
+                        <div class="col-md-3 col-6 pt-5">
+                            <ul class="ps-0">
+                                <li><a class="fw_700 fs_md f_Montserrat clr_white" href="#">Company Info</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-3" href="#">About
+                                        Us</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2"
+                                        href="#">Carrier</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">We are
+                                        hiring</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 pt-5">
+                            <ul class="ps-0">
+                                <li><a class="fw_700 fs_md f_Montserrat clr_white d-inline-block" href="#">Legal</a>
+                                </li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white pt-3 d-inline-block" href="#">About
+                                        Us</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2"
+                                        href="#">Carrier</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">We are
+                                        hiring</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 pt-5">
+                            <ul class="ps-0">
+                                <li><a class="fw_700 fs_md f_Montserrat clr_white" href="#">Features</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-3" href="#">Business
+                                        Marketing</a>
+                                </li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">User
+                                        Analytic</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">Live
+                                        Chat</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2"
+                                        href="#">Unlimited Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-6 pt-5">
+                            <ul class="ps-0">
+                                <li><a class="fw_700 fs_md f_Montserrat clr_white" href="#">Resources</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-3" href="#">IOS &
+                                        Android</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">Watch a
+                                        Demo</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2"
+                                        href="#">Customers</a></li>
+                                <li><a class="fw_700 fs_sm f_Montserrat clr_white d-inline-block pt-2" href="#">API</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12 align-items-center pt-5">
+                    <a class="fw_700 fs_md f_Montserrat clr_white" href="#">Get In Touch</a>
+                    <div class="d-flex justify-content-center pt-2">
+                        <span><img src="./assets/img/png/call.png" alt="phone"></span>
+                        <p class="fw_700 fs_sm f_Montserrat clr_white pt-2 ps-3">(480) 555-0103</p>
+                    </div>
+                    <div class="d-flex pt-2">
+                        <span><img src="./assets/img/png/location.png" alt="location"></span>
+                        <p class="fw_700 fs_sm f_Montserrat clr_white pt-2 ps-3">4517 Washington Ave. Manchester,
+                            Kentucky 39495</p>
+                    </div>
+                    <div class="d-flex justify-content-center pt-2">
+                        <span><img src="./assets/img/png/mail.png" alt="mail"></span>
+                        <p class="fw_700 fs_sm f_Montserrat clr_white pt-2 ps-3">debra.holt@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-2 -->
+    <div class="container pt-3">
+        <div class="d-flex justify-content-between flex-column flex-sm-row text-center">
+            <p class="fw_700 fs_sm  f_Montserrat clr_grey">Made With Love By Figmaland All Right Reserved</p>
+            <div>
+                <a href="#"><img src="./assets/img/png/fb.png" alt="fb"></a>
+                <a href="#"><img class="ps-3" src="./assets/img/png/insta.png" alt="insta"></a>
+                <a href="#"><img class="ps-3" src="./assets/img/png/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- js -->
+    <script>
+        function navshow() {
+            document.getElementById("show").classList.toggle("left0")
+        }
+    </script>
+
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slick_slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
