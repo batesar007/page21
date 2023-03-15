@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.overflowhiden{
+    overflow: hidden !important;
+}
 .style_jion {
     background: #FC724D;
     border-radius: 5px;
@@ -118,7 +120,7 @@
 /* media */
 @media (max-width:1200px) {
     nav ul {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         background-color: blue;
